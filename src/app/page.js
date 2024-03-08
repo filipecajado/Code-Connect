@@ -1,11 +1,14 @@
 import { CardPost } from "@/components/CardPost";
 import styles from './page.module.css';
+import { logger } from "@/logger";
 
 async function getAllPost () {
   const response = await fetch('http://localhost:3042/posts')
   if(!response.ok) {
-    console.log('Ops, alufma coisa deu errado' );
+    logger.error('Ops, alufma coisa deu errado' );
+    return []
   }
+  logger.info("Posts com sucesso")
   return response.json()
 }
 
