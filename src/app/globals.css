@@ -15,3 +15,7 @@ body {
     gap: 28px;
     height: 100vh;
 }
+
+.main-content {
+  flex-grow: 1;
+}

@@ -21,7 +21,9 @@ export default function RootLayout({ children }) {
       <body>
         <div className='app-container'>
           <Aside />
-          {children}
+          <div className='main-content'>
+             {children}
+          </div>
         </div>
       </body>
     </html>
