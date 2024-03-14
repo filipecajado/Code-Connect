@@ -12,9 +12,9 @@ async function getAllPost (page) {
   return response.json()
 }
 
-export default async function Home() {
-
-  const {data: posts, prev , next} = await getAllPost(1);
+export default async function Home({searchParams}) {
+  const currentPage = searchParams.page ?? 1;
+  const {data: posts, prev , next} = await getAllPost(currentPage);
 
   return (
     <main className={styles.grid}>
@@ -24,8 +24,11 @@ export default async function Home() {
         post={post}
          />
       ))}
-      {prev && <Link href={`/?page=${prev}`}> Página anterior</Link>}
-      {next && <Link href={`/?page=${next}`}> Próxima página</Link>}
+
+      <div className={styles.links}>
+       {prev && <Link href={`/?page=${prev}`}> Página anterior</Link>}
+        {next && <Link href={`/?page=${next}`}> Próxima página</Link>}
+      </div>
     </main>
   );
 }
