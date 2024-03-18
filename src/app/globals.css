@@ -13,7 +13,7 @@ body {
     margin: 56px auto;
     display: flex;
     gap: 28px;
-    height: 200vh;
+    min-height: 100vh;
   }
   
   .main-content {
