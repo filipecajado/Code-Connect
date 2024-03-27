@@ -1,2 +1,7 @@
 {"level":"error","message":"Ops, alufma coisa deu errado","service":"user-service"}
 {"level":"error","message":"Ops, alufma coisa deu errado","service":"user-service"}
+{"error":{"clientVersion":"5.11.0","code":"P2021","meta":{"modelName":"Post","table":"public.Post"},"name":"PrismaClientKnownRequestError"},"level":"error","message":"Falha ao obter posts","service":"user-service"}
+{"error":{"clientVersion":"5.11.0","code":"P2021","meta":{"modelName":"Post","table":"public.Post"},"name":"PrismaClientKnownRequestError"},"level":"error","message":"Falha ao obter posts","service":"user-service"}
+{"error":{"clientVersion":"5.11.0","code":"P2021","meta":{"modelName":"Post","table":"public.Post"},"name":"PrismaClientKnownRequestError"},"level":"error","message":"Falha ao obter posts","service":"user-service"}
+{"error":{"clientVersion":"5.11.0","code":"P2021","meta":{"modelName":"Post","table":"public.Post"},"name":"PrismaClientKnownRequestError"},"level":"error","message":"Falha ao obter posts","service":"user-service"}
+{"error":{"clientVersion":"5.11.0","code":"P2021","meta":{"modelName":"Post","table":"public.Post"},"name":"PrismaClientKnownRequestError"},"level":"error","message":"Falha ao obter posts","service":"user-service"}

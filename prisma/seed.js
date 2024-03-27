@@ -2,6 +2,8 @@ const { PrismaClient } = require('@prisma/client')
 const prisma = new PrismaClient()
 
 async function main() {
+        
+ 
     const author = {
         name: "Ana Beatriz",
         username: "anabeatriz_dev",

@@ -7,8 +7,7 @@ async function getAllPost (page) {
   try{
 
     const posts = await db.post.findMany()
-    
-    console.log(' :', posts);
+
     return {data : posts, prev: null, next: null}
   } catch (error){
     logger.error('Falha ao obter posts', {error})
